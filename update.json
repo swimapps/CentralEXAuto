@@ -1,6 +1,6 @@
 {
-  "versionCode": 2,
-  "versionName": "2.2.0",
+  "versionCode": 3,
+  "versionName": "2.2.1",
   "apkUrl": "https://raw.githubusercontent.com/swimapps/CentralEXAuto/main/TelaPretaCentral-geely-platform-signed.apk",
-  "sha256": "9ddd7ec3a28a2848925795eeb41b18f66dc4268780b524af83bc110aba7754dc"
+  "sha256": "92a3ff1c8e86886e719a7cf5e21d2a89a325be547769dc070ffc754b141314df"
 }
