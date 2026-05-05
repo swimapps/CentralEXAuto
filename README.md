@@ -10,6 +10,8 @@ Repositório só com binários e manifestos para OTA.
 | CentralEXAuto-geely-platform-signed.apk | APK da central. |
 | ca_fix.apk | ConnAdaptor modificado (colocar nesta pasta ao publicar). |
 | connadaptor.json | Controlo OTA do **ca_fix**: campo `md5` (32 hex do ficheiro) e `apkUrl` (URL raw do mesmo `ca_fix.apk`). |
+| DualDashcam_signed.apk | Dashcam dual (Camera2 + DVR VHAL), grava em /sdcard/Download. |
+| dualdashcam.json | Versão OTA do **DualDashcam** (`versionCode`, `versionName`, `apkUrl`, `sha256`). |
 
 Ao correr `./gradlew signGeelyPlatform` no projeto **TelaPretaCentral**, se existir `CentralEXAuto/ca_fix.apk`, o `connadaptor.json` é regenerado com o MD5 certo. Caso contrário, atualize o MD5 antes do push (`md5sum ca_fix.apk` — usar 32 hex sem espaços no JSON).
 
