@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip -p *)",
+      "Bash(unzip -l *)",
+      "Bash(adb logcat -d *)",
+      "Bash(adb devices)",
+      "Bash(dexdump *)",
+      "Bash(aarch64-linux-gnu-objdump *)"
+    ]
+  }
+}
