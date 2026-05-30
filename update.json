@@ -1,6 +1,6 @@
 {
-  "versionCode": 101,
-  "versionName": "2.2.99",
+  "versionCode": 102,
+  "versionName": "2.3.0",
   "apkUrl": "https://raw.githubusercontent.com/swimapps/CentralEXAuto/main/CentralEXAuto-geely-platform-signed.apk",
-  "sha256": "a5758fafba25ba9ba512941963fc792185139e534936a62343b0386bf08df7c8"
+  "sha256": "ce9f55ab2fd09fdf2e1d007767f2fb9e0ffb69a60bc8291eca4f9517c4040754"
 }
