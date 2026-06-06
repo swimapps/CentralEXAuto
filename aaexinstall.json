@@ -1,6 +1,6 @@
 {
-  "versionCode": 2,
-  "versionName": "1.0.1",
+  "versionCode": 3,
+  "versionName": "1.0.2",
   "apkUrl": "https://raw.githubusercontent.com/swimapps/CentralEXAuto/main/AAExInstall-geely-platform-signed.apk",
-  "sha256": "46b142636cd22733f79b485624916fae925d3915933e15ee0b137d85d8c49e82"
+  "sha256": "13ab22db4597c35bd0b578106936e47b64b973a0735d57d0d9f734170685b259"
 }
