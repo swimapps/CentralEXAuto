@@ -1,6 +1,6 @@
 {
-  "versionCode": 40,
-  "versionName": "2.4.1",
+  "versionCode": 41,
+  "versionName": "2.4.2",
   "apkUrl": "https://raw.githubusercontent.com/swimapps/CentralEXAuto/main/CentralPhoneApp-debug.apk",
-  "sha256": "9653ecf593064b62e64c1ce24c2619c39fecf659ab76360426002bdc6c2af866"
+  "sha256": "603b63074d7d5ae68ea593c5894087e9563168e5b15b9da8ec6b48921039684a"
 }
