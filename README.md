@@ -45,3 +45,11 @@ Roda **no celular**. É o companheiro do CentralEXAuto: sincroniza, em tempo rea
 - Dá pra, por exemplo, ligar o ar-condicionado do carro pelo celular antes de entrar nele.
 
 *Requer autorização de uso, que deve ser solicitada diretamente ao desenvolvedor.*
+
+## Contato
+
+O desenvolvedor pode ser contactado pelos grupos de WhatsApp ou pelo Instagram:
+
+- WhatsApp: https://chat.whatsapp.com/KEdB6K9ghBWBTSsAH0u2MC
+- WhatsApp: https://chat.whatsapp.com/ISkSCIdDz4fBn6d61wQlJ5
+- Instagram: https://www.instagram.com/p/Da3AEOvkarp/
