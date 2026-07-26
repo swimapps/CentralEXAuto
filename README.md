@@ -2,9 +2,9 @@
 
 Ecossistema de apps para a central multimídia **Geely IHU629G** (Android Automotive / ECarX) e o celular do motorista. Quatro peças principais, cada uma com um papel distinto:
 
-> **Atualização de nomes:** os apps antes chamados **CentralEXAuto** e **CentralPhoneApp** passaram a se chamar **EX Sapo Central** e **EX Sapo Móvel**, respectivamente. Os APKs foram renomeados para refletir os novos nomes (`EXSapoCentral.apk` e `exsapomovel.apk`), mas os arquivos antigos (`CentralEXAuto-geely-platform-signed.apk` e `CentralPhoneApp-debug.apk`) continuam no repositório por compatibilidade. Os nomes de pacote (`com.ex.auto`, `com.central.telapreta.phone`) não mudaram, então é o mesmo app — apenas com o nome de exibição e o arquivo atualizados.
+> **Atualização de nomes:** os apps antes chamados **CentralEXAuto** e **CentralPhoneApp** passaram a se chamar **EX Sapo Central** e **EX Sapo Móvel**, respectivamente. Os APKs foram renomeados para refletir os novos nomes (`EXSapoCentral.apk` e `exsapomovel.apk`), mas os arquivos antigos (`CentralEXAuto-geely-platform-signed.apk` e `CentralPhoneApp-debug.apk`) continuam no repositório por compatibilidade. É o mesmo app de sempre — apenas com o nome de exibição e o arquivo atualizados.
 
-## EX Sapo Central (antigo CentralEXAuto) — `EXSapoCentral.apk` (`com.ex.auto`)
+## EX Sapo Central (antigo CentralEXAuto) — `EXSapoCentral.apk`
 
 O app principal, roda **na central do carro**. É um app de sistema (`sharedUserId="android.uid.system"`, assinado com a chave de plataforma da Geely), o que dá acesso a APIs privilegiadas (Car API, WiFi, energia) que um app comum não teria.
 
@@ -19,7 +19,7 @@ Principais funções:
 - **Watchdog** — serviço em foreground que mantém tudo isso vivo, reaplica ajustes no boot/troca de marcha e se recupera de crash/bootloop.
 - **Instalador de apps** — recebe e instala os APKs baixados pelo AAExInstall.
 
-## AAExInstall — `AAExInstall-geely-platform-signed.apk` (`com.central.aaexinstall`)
+## AAExInstall — `AAExInstall-geely-platform-signed.apk`
 
 Roda **no celular** do motorista (não na central). É a "loja de apps" do ecossistema: baixa, confere o SHA-256 e instala/atualiza os demais apps (incluindo os dois abaixo e vários outros de terceiros úteis no carro), buscando a versão mais recente de cada um a partir deste repositório.
 
@@ -27,7 +27,7 @@ Semelhante ao **AAAD**, também instala aplicativos dentro do Android Auto que n
 
 *Requer autorização de uso, que deve ser solicitada diretamente ao desenvolvedor.*
 
-## AAExCarro — `AAExCarro.apk` (`com.aaex.carro`)
+## AAExCarro — `AAExCarro.apk`
 
 Roda **no celular**, com superfície no Android Auto. É o app de telemetria e custos do veículo:
 - Lê dados de OBD2 via adaptador ELM327 (a central não consegue requisitar OBD2 diretamente).
@@ -37,7 +37,7 @@ Roda **no celular**, com superfície no Android Auto. É o app de telemetria e c
 
 *Requer autorização de uso, que deve ser solicitada diretamente ao desenvolvedor.*
 
-## EX Sapo Móvel (antigo CentralPhoneApp) — `exsapomovel.apk` (`com.central.telapreta.phone`)
+## EX Sapo Móvel (antigo CentralPhoneApp) — `exsapomovel.apk`
 
 Roda **no celular**. É o companheiro do EX Sapo Central: sincroniza, em tempo real, as configurações entre o celular e a central, por WiFi (TCP) ou Bluetooth (RFCOMM), usando o mesmo protocolo nos dois casos.
 
