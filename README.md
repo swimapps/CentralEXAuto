@@ -2,9 +2,9 @@
 
 Ecossistema de apps para a central multimídia **Geely IHU629G** (Android Automotive / ECarX) e o celular do motorista. Quatro peças principais, cada uma com um papel distinto:
 
-> **Atualização de nomes:** os apps antes chamados **CentralEXAuto** e **CentralPhoneApp** passaram a se chamar **EX Sapo Central** e **EX Sapo Móvel**, respectivamente. Os nomes técnicos (arquivo do APK e nome de pacote) continuam os mesmos; a mudança é apenas na identidade/nome de exibição dos apps.
+> **Atualização de nomes:** os apps antes chamados **CentralEXAuto** e **CentralPhoneApp** passaram a se chamar **EX Sapo Central** e **EX Sapo Móvel**, respectivamente. Os APKs foram renomeados para refletir os novos nomes (`EXSapoCentral.apk` e `exsapomovel.apk`), mas os arquivos antigos (`CentralEXAuto-geely-platform-signed.apk` e `CentralPhoneApp-debug.apk`) continuam no repositório por compatibilidade. Os nomes de pacote (`com.ex.auto`, `com.central.telapreta.phone`) não mudaram, então é o mesmo app — apenas com o nome de exibição e o arquivo atualizados.
 
-## EX Sapo Central (antigo CentralEXAuto) — `CentralEXAuto-geely-platform-signed.apk` (`com.ex.auto`)
+## EX Sapo Central (antigo CentralEXAuto) — `EXSapoCentral.apk` (`com.ex.auto`)
 
 O app principal, roda **na central do carro**. É um app de sistema (`sharedUserId="android.uid.system"`, assinado com a chave de plataforma da Geely), o que dá acesso a APIs privilegiadas (Car API, WiFi, energia) que um app comum não teria.
 
@@ -37,7 +37,7 @@ Roda **no celular**, com superfície no Android Auto. É o app de telemetria e c
 
 *Requer autorização de uso, que deve ser solicitada diretamente ao desenvolvedor.*
 
-## EX Sapo Móvel (antigo CentralPhoneApp) — `CentralPhoneApp-debug.apk` (`com.central.telapreta.phone`)
+## EX Sapo Móvel (antigo CentralPhoneApp) — `exsapomovel.apk` (`com.central.telapreta.phone`)
 
 Roda **no celular**. É o companheiro do EX Sapo Central: sincroniza, em tempo real, as configurações entre o celular e a central, por WiFi (TCP) ou Bluetooth (RFCOMM), usando o mesmo protocolo nos dois casos.
 
