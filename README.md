@@ -2,7 +2,9 @@
 
 Ecossistema de apps para a central multimídia **Geely IHU629G** (Android Automotive / ECarX) e o celular do motorista. Quatro peças principais, cada uma com um papel distinto:
 
-## CentralEXAuto (Sapo) — `CentralEXAuto-geely-platform-signed.apk` (`com.ex.auto`)
+> **Atualização de nomes:** os apps antes chamados **CentralEXAuto** e **CentralPhoneApp** passaram a se chamar **EX Sapo Central** e **EX Sapo Móvel**, respectivamente. Os APKs foram renomeados para refletir os novos nomes (`EXSapoCentral.apk` e `exsapomovel.apk`), mas os arquivos antigos (`CentralEXAuto-geely-platform-signed.apk` e `CentralPhoneApp-debug.apk`) continuam no repositório por compatibilidade. É o mesmo app de sempre — apenas com o nome de exibição e o arquivo atualizados.
+
+## EX Sapo Central (antigo CentralEXAuto) — `EXSapoCentral.apk`
 
 O app principal, roda **na central do carro**. É um app de sistema (`sharedUserId="android.uid.system"`, assinado com a chave de plataforma da Geely), o que dá acesso a APIs privilegiadas (Car API, WiFi, energia) que um app comum não teria.
 
@@ -13,11 +15,11 @@ Principais funções:
 - **AVAS** — controle do som de alerta para pedestres.
 - **WiFi privilegiado** — gestão de rede/hotspot com permissões que um app normal não tem.
 - **Telemetria** — expõe os dados do VHAL (velocidade, bateria, etc.) via TCP na porta 47800, consumidos por outros apps (painel, AAExCarro).
-- **Sincronização com o celular** — troca configurações e comandos com o CentralPhoneApp em tempo real.
+- **Sincronização com o celular** — troca configurações e comandos com o EX Sapo Móvel (antigo CentralPhoneApp) em tempo real.
 - **Watchdog** — serviço em foreground que mantém tudo isso vivo, reaplica ajustes no boot/troca de marcha e se recupera de crash/bootloop.
 - **Instalador de apps** — recebe e instala os APKs baixados pelo AAExInstall.
 
-## AAExInstall — `AAExInstall-geely-platform-signed.apk` (`com.central.aaexinstall`)
+## AAExInstall — `AAExInstall-geely-platform-signed.apk`
 
 Roda **no celular** do motorista (não na central). É a "loja de apps" do ecossistema: baixa, confere o SHA-256 e instala/atualiza os demais apps (incluindo os dois abaixo e vários outros de terceiros úteis no carro), buscando a versão mais recente de cada um a partir deste repositório.
 
@@ -25,7 +27,7 @@ Semelhante ao **AAAD**, também instala aplicativos dentro do Android Auto que n
 
 *Requer autorização de uso, que deve ser solicitada diretamente ao desenvolvedor.*
 
-## AAExCarro — `AAExCarro.apk` (`com.aaex.carro`)
+## AAExCarro — `AAExCarro.apk`
 
 Roda **no celular**, com superfície no Android Auto. É o app de telemetria e custos do veículo:
 - Lê dados de OBD2 via adaptador ELM327 (a central não consegue requisitar OBD2 diretamente).
@@ -35,9 +37,9 @@ Roda **no celular**, com superfície no Android Auto. É o app de telemetria e c
 
 *Requer autorização de uso, que deve ser solicitada diretamente ao desenvolvedor.*
 
-## CentralPhoneApp — `CentralPhoneApp-debug.apk` (`com.central.telapreta.phone`)
+## EX Sapo Móvel (antigo CentralPhoneApp) — `exsapomovel.apk`
 
-Roda **no celular**. É o companheiro do CentralEXAuto: sincroniza, em tempo real, as configurações entre o celular e a central, por WiFi (TCP) ou Bluetooth (RFCOMM), usando o mesmo protocolo nos dois casos.
+Roda **no celular**. É o companheiro do EX Sapo Central: sincroniza, em tempo real, as configurações entre o celular e a central, por WiFi (TCP) ou Bluetooth (RFCOMM), usando o mesmo protocolo nos dois casos.
 
 - **Configurações (toggles, drive/regen, etc.):** a central é sempre a fonte da verdade — o celular adota o valor dela e não fica reaplicando ajustes sozinho a cada reconexão.
 - **Ar-condicionado:** o celular pode comandar diretamente a ventilação e a temperatura do carro, sem precisar esperar sincronização.
@@ -48,8 +50,9 @@ Roda **no celular**. É o companheiro do CentralEXAuto: sincroniza, em tempo rea
 
 ## Contato
 
-O desenvolvedor pode ser contactado pelos grupos de WhatsApp ou pelo Instagram:
+O desenvolvedor pode ser contactado pelos grupos de WhatsApp, pelo Instagram ou por e-mail:
 
 - WhatsApp: https://chat.whatsapp.com/KEdB6K9ghBWBTSsAH0u2MC
 - WhatsApp: https://chat.whatsapp.com/ISkSCIdDz4fBn6d61wQlJ5
 - Instagram: https://www.instagram.com/p/Da3AEOvkarp/
+- E-mail: appsdecarro@gmail.com
