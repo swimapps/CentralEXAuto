@@ -1,6 +1,6 @@
 {
-  "versionCode": 1,
-  "versionName": "1.0.0-swc-gestos",
+  "versionCode": 2,
+  "versionName": "1.1.0-som-gesto",
   "apkUrl": "https://raw.githubusercontent.com/swimapps/CentralEXAuto/main/GeelyAutoKeyServer-patched-signed.apk",
-  "sha256": "6cdcd5150cd634d395461a879e693f17e368027873f3d8adcc6d9133ef08fd99"
+  "sha256": "1f9fc7464563a5d4e4f7443763aa2837f0156e1334b66021fba8aad51e8c221a"
 }
