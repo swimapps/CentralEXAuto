@@ -1,6 +1,6 @@
 {
-  "versionCode": 2,
-  "versionName": "1.1.0-som-gesto",
+  "versionCode": 3,
+  "versionName": "1.2.0-toast-e-som-saida",
   "apkUrl": "https://raw.githubusercontent.com/swimapps/CentralEXAuto/main/GeelyAutoKeyServer-patched-signed.apk",
-  "sha256": "1f9fc7464563a5d4e4f7443763aa2837f0156e1334b66021fba8aad51e8c221a"
+  "sha256": "9a412e029470b22f284f73d97f111eab92602788b3184b200f2687c6087a63fc"
 }
