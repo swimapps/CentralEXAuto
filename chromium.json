@@ -1,5 +1,8 @@
 {
+  "versionCode": 108,
+  "versionName": "108.0.5359.156",
+  "apkUrl": "https://github.com/bromite/bromite/releases/download/108.0.5359.156/arm64_ChromePublic.apk",
   "pageUrl": "https://github.com/bromite/bromite/releases",
   "pacote": "org.bromite.chromium",
-  "nota": "Bromite/Chromium — instalar pela origem oficial"
+  "nota": "Bromite (arm64) — release oficial. Sem sha256: o release e antigo e a API do GitHub nao publica digest para ele; a integridade fica por conta do HTTPS."
 }
