@@ -20,6 +20,10 @@
     {
       "label": "IHU629G0MAT1D00010006863",
       "hash": "ad34429c69aa8c22a9d8c0ce4bff658560504eb683046ea83b2809b2f12b961a"
+    },
+    {
+      "hash": "92930ff70e0e8fac1ae040ce7c1397806eeea86b9737cd243efaae4dac5481aa"
     }
-  ]
+  ],
+  "_nota": "entries[].hash e o unico campo lido pelo app (BanChecker.kt). O campo 'label' guarda XDSN em CLARO e este repositorio e PUBLICO — entradas novas nao levam label."
 }
