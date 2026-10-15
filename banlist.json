@@ -21,6 +21,9 @@
     },
     {
       "hash": "f32e331c3c72ce95bb1565190a8d1d66350d3e390c7011903ae626e39f35bf98"
+    },
+    {
+      "hash": "294026d749c6009810f02ab8a794fe2dbc35469908ccaee653396d79746a80de"
     }
   ],
   "_nota": "entries[].hash e o unico campo lido pelo app (BanChecker.kt). O campo 'label' guarda XDSN em CLARO e este repositorio e PUBLICO — entradas novas nao levam label."
